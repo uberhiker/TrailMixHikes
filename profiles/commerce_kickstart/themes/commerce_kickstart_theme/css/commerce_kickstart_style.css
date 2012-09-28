@@ -90,7 +90,7 @@ body {
 .block-shopping-cart-block .content {
   background: white url("../images/picto_cart.png") 5px 5px no-repeat; }
   .block-shopping-cart-block .content .view-shopping-cart .line-item-summary ul.links {
-    background-color: #2698F2; }
+    background-color: #85C657; }
 
 /**************************************************
 * --
@@ -130,7 +130,7 @@ body {
 */
 #promotional_banner {
   /* HP blocks: Top advert */
-  background-color: #2698F2;
+  background-color: #85C657;
   color: #FFFFFF;
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
@@ -152,7 +152,7 @@ body {
     -webkit-border-radius: 4px;
     -khtml-border-radius: 4px;
     border-radius: 4px;
-    color: #2698F2;
+    color: #85C657;
     font-size: 14px;
     font-weight: 700;
     padding: 4px 12px;
@@ -166,26 +166,38 @@ body {
   .block-shipping-discount #shipping {
     background-color: #000000;
     border: 6px solid #ffffff;
-    color: #2698F2;
+    color: #85C657;
     display: block;
-    font-size: 13px;
+    font-size: 28px;
     line-height: 24px;
     text-align: center;
     margin-top: 20px;
     padding: 10px 5px 20px 5px; }
-  .block-shipping-discount #shipping #shipping_message span {
+
+/* Changes the word "Available"*/
+  .block-shipping-discount #shipping #shipping_message div {
+	display: block;
+	color: #85C657;
+	font-size: 25px;
+	font-weight: bold;
+	padding: 8px 0 4px 0; }
+
+/* Changes the word "Discounts"*/
+  .block-shipping-discount #shipping #shipping_message div span {
     border-bottom: 1px solid #ffffff;
     display: block;
     color: white;
-    font-size: 20px;
+    font-size: 23px;
     padding: 10px 0 4px 0;
     text-transform: uppercase; }
-  .block-shipping-discount #shipping #shipping_message span em {
-    font-size: 27px;
+
+/*Changes the word "Volunteer"*/
+  .block-shipping-discount #shipping #shipping_message div span em {
+    font-size: 18px;
     font-style: normal; }
   .block-shipping-discount #shipping #shipping_currency {
     display: block;
-    font-size: 27px;
+    font-size: 3px;
     margin-top: 2px; }
   .block-shipping-discount #shipping #shipping_message {
     font-family: "Open Sans", sans-serif;

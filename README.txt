@@ -1,12 +1,6 @@
 
 CONTENTS OF THIS FILE
 ---------------------
-Build of the Trail Mix Hikes website using Commerce Kickstart installation profile
-
-
-
- 
-
 
  * About Drupal
  * Configuration and features

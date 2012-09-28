@@ -46,19 +46,19 @@ function commerce_kickstart_block_block_view($delta = '') {
 
   switch ($delta) {
     case 'shipping_discount':
-      $amount = '99';
+      $amount = '';
       $items = array(
-        commerce_kickstart_block_build_element(t('<span><em>Free</em> shipping</span> on orders over'), 'shipping_message'),
-        commerce_kickstart_block_build_element(t('@amount', array('@amount' => commerce_currency_format($amount, commerce_default_currency()))), 'shipping_currency'),
+        commerce_kickstart_block_build_element(t('<div><span><em>Volunteer</em> Discounts</span> Available</div>'), 'shipping_message'),
+        //commerce_kickstart_block_build_element(t('@amount', array('@amount' => commerce_currency_format($amount, commerce_default_currency()))), 'shipping_currency'),
       );
       $block['content'] = commerce_kickstart_block_build_element(implode('', $items), 'shipping', NULL, 'div');
       break;
 
     case 'promotional_banner':
       $items = array(
-        commerce_kickstart_block_build_element(t('SAVE 25%'), NULL, 'promotional_banner_saving'),
-        t('Purchases made between June 5 - 12 will be discounted'),
-        commerce_kickstart_block_build_element(t('Offer Details'), NULL, 'promotional_banner_special_offer'),
+        commerce_kickstart_block_build_element(t('Join Trail Mix Hikes Today!'), NULL, 'promotional_banner_saving'),
+        t(''),
+        commerce_kickstart_block_build_element(t('<a href="@url">Offer Details</a>', array('@url' => 'http://www.trailmixhikes.com')), NULL, 'promotional_banner_special_offer'),
       );
       $block['content'] = commerce_kickstart_block_build_element(implode(' ', $items), 'promotional_banner', NULL, 'div');
       break;
